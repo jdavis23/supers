@@ -1,6 +1,12 @@
 <li>
-<span class="content"><%= @user.course %></span>
- <span class="content"><button type="button" class="btn btn-default"> <strong><%= micropost.status %></strong></span></button> 
+<span class="user">
+      <%= @user.name %> - <i><%= @user.course %></i></span>
+      <span class="user">
+      <section>
+      <p><strong><%= micropost.status %></strong></p>
+      </section>
+      
+    </span>
   <span class="content"><%= micropost.content %></span>
   <span class="timestamp">
     Posted <%= time_ago_in_words(micropost.created_at) %> ago.

@@ -11,25 +11,30 @@
         <%= render 'shared/micropost_form' %>
       </section>
     </aside>
-    <div class="span8">
-      <h3>All Conditions Updates</h3>
+  </div>
+    <div class="row">
+    <div class="span4">
+      <h5>All Conditions Updates <%= link_to "Find a Super", users_path,
+	      						class: "btn btn-primary btn-warning"%></h5>
       <%= render 'shared/feed' %>
     </div>
+    </div>
+    <%= render 'shared/boilerplate_conditions_feed' %>
   </div>  
 <% else %>
   <div class="center hero-unit">
     <h1>Supers App</h1>
 
-    <h2>
+    <h2 class= "pull-center">
       An application for Golf Course Superintendents
     </h2>
 
     <%= link_to "Sign In", signin_path, 
                                 class: "btn btn-large btn-primary btn-success" %>
                                 
-                                    <%= link_to "Sign up", signup_path, 
+    <%= link_to "Sign up", signup_path, 
                                 class: "btn btn-large btn-primary" %>
   </div>
 
-  <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+  <%#= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
 <% end %> 

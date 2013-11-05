@@ -1,20 +1,20 @@
 <% provide(:title, @user.name) %>
 <div class="row">
-    <div class="span8">
+    <div class="span4">
 
-    <%= render 'follow_form' if signed_in? %>
+    <section>
     <% if @user.microposts.any? %>
-    
-    <div class="row">
-    <%= render 'shared/boilerplate_conditions_feed' %>
-    </div>
-    <div class="row">
-        <h2><%= link_to @user.name %></h2>
-      </div>
-      <div class="row">
-        <p><%=  @user.course %></p>
-      </div>
+    </section>
 
+        <section>
+    <%= render 'follow_form' if signed_in? %>
+    </section>
+    <div class="row">
+        <h2><%= link_to @user.name %> - <%=  @user.course %></h2>
+      </div>
+    
+
+<div class="span4">
     <div class="row">
       <h2> Conditions Updates (<%= @user.microposts.count %>)</h2>
     </div>
@@ -24,4 +24,8 @@
       <%= will_paginate @microposts %>
     <% end %>
   </div>
+      <div class="row">
+    <%= render 'shared/boilerplate_conditions_feed' %>
+    </div>
+    </div>
 </div>
