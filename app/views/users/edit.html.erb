@@ -8,6 +8,9 @@
 
       <%= f.label :name %>
       <%= f.text_field :name %>
+      
+      <%= f.label :course %>
+      <%= f.text_field :course %>
 
       <%= f.label :email %>
       <%= f.text_field :email %>
@@ -21,7 +24,5 @@
       <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
     <% end %>
 
-    <%= gravatar_for @user %>
-    <a href="http://gravatar.com/emails">change</a>
   </div>
 </div>
