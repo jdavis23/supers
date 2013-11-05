@@ -1,10 +1,18 @@
 <% provide(:title, 'All users') %>
-<h1>All Supers</h1>
-
+<div class="row">
+<h5>Click Name to View Updates</h5>
+</div>
 <%= will_paginate %>
-
+<div class="row">
 <ul class="users">
   <%= render @users %>
 </ul>
-
+</div>
 <%= will_paginate %>
+<br>
+</br>
+<div class ="row">
+    
+    <%= render 'shared/boilerplate_find_super' %>
+    
+</div>
