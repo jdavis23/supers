@@ -1,11 +1,17 @@
+
+
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
+  
   <div class="field">
+  
     <%= f.text_area :content, placeholder: "Notes on Course Conditions or Rainfall" %>
   </div>
   <div class="field">
     <%= f.text_area :status, placeholder: "Cart Status Here (if necessary)" %>
   </div>
-  <%= f.submit "Update Conditions", class: "btn btn-large btn-success" %>
+  <%= f.submit "Update Conditions", class: "btn btn-block btn-large btn-success" %>
 <% end %>
- 
+</div>
+  
+  

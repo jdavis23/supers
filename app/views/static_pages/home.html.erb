@@ -1,6 +1,6 @@
 <% if signed_in? %>
-  <div class="row">
-    <aside class="span4">
+  <div class="row-fluid">
+    <aside class="span12">
       <section>
         <%= render 'shared/user_info' %>
       </section>
@@ -12,10 +12,12 @@
       </section>
     </aside>
   </div>
-    <div class="row">
-    <div class="span4">
-      <h5>All Conditions Updates <%= link_to "Find a Super", users_path,
-	      						class: "btn btn-primary btn-warning"%></h5>
+  
+    <div class="row-fluid">
+    <div class="span12">
+    <%= link_to "Find a Super", users_path,
+	      						class: "btn btn-block btn-large btn-warning"%>
+      <h5>All Conditions Updates</h5>
       <%= render 'shared/feed' %>
     </div>
     </div>
@@ -25,7 +27,7 @@
   <div class="center hero-unit">
     <h1>Supers App</h1>
 
-    <h2 class= "pull-center">
+    <h2>
       An application for Golf Course Superintendents
     </h2>
 

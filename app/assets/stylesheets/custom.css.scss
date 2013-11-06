@@ -71,13 +71,14 @@ h3 {
 }
 
 h5 {
-  font-size: 1.1em;
+  font-size: 2.4em;
   line-height: 1.7em;
   color: green;
+  text-align: center;
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 2.4em;
   line-height: 1.7em;
 }
 
@@ -106,11 +107,11 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
-  color: $grayLight;
+  color: black;
   a {
-    color: $gray; 
+    color: black; 
     &:hover {
-      color: $grayDarker;
+      color: gray;
     }
   }
   small {
@@ -141,7 +142,7 @@ footer {
 aside {
   section {
     padding: 10px 0;
-    border-top: 1px solid $grayLighter;
+    border-top: 1px solid gray;
     &:first-child {
       border: 0;
       padding-top: 0;
@@ -152,7 +153,7 @@ aside {
       line-height: 1;
     }
     h1 {
-      font-size: 1.4em;
+      font-size: 2.4em;
       text-align: center;
       letter-spacing: -1px;
       margin-bottom: 3px;
@@ -171,7 +172,7 @@ aside {
   a {
     float: left;
     padding: 0 10px;
-    border-left: 1px solid $grayLighter;
+    border-left: 1px solid gray;
     color: gray;
     &:first-child {
       padding-left: 0;
@@ -179,7 +180,7 @@ aside {
     }
     &:hover {
       text-decoration: none;
-      color: $blue;
+      color: gray;
     }
   }
   strong {
@@ -202,7 +203,14 @@ input, textarea, select, .uneditable-input {
   width: 100%;
   margin-bottom: 15px;
   @include box_sizing;
+  height: 150px;
+  font-size: 24px;
+  
 }
+
+
+
+
 
 input {
   height: auto !important;
@@ -229,9 +237,9 @@ input {
   li {
     overflow: auto;
     padding: 10px 0;
-    border-top: 1px solid $grayLighter;
+    border-top: 1px solid gray;
     &:last-child {
-      border-bottom: 1px solid $grayLighter;
+      border-bottom: 1px solid gray;
     }
   }
 }
@@ -244,7 +252,7 @@ input {
 
   li {
     padding: 10px 0;
-    border-top: 1px solid #e8e8e8;
+    border-top: 10px solid #e8e8e8;
   }
 }
 .content {
@@ -252,7 +260,7 @@ input {
   padding-top: 5px;
 }
 .timestamp {
-  color: $grayLight;
+  color: gray;
 }
 .gravatar {
   float: left;
