@@ -4,9 +4,9 @@
 
   <span class="content"><p><%= micropost.content %></p></span>
   <p><strong><%= micropost.status %></strong></p>
-  <span class="timestamp">
+  <span class="timestamp"><p>
     Posted <%= time_ago_in_words(micropost.created_at) %> ago.
-  </span>
+  </p></span>
   <% if current_user?(micropost.user) %>
     <%= link_to "delete", micropost, method: :delete,
                                      data: { confirm: "You sure?" },
