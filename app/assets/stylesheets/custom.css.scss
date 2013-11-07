@@ -205,13 +205,15 @@ aside {
 /* forms */
 
 input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
+  border: 3px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
   @include box_sizing;
   height: 150px;
   font-size: 3em;
-  padding-top: 25px;
+  padding-top: 15px;
+  line-height: 1.2em;
+  
   
 }
 
