@@ -8,7 +8,7 @@
     <%= f.text_area :content, placeholder: "Notes on Course Conditions" %>
   </div>
   <div class="field">
-    <%= f.text_area :status, placeholder: "Cart Status Here (if necessary)" %>
+    <%= f.select(:status, [["Scatter"], ["Cart Path Only"], ["90 Degrees"], ["Roughs Only"]]) %>
   </div>
   <div class="hero-unit"><h1>Hit Green Bar to Update</h1><%= f.submit "", class: "btn btn-block btn-large btn-success" %></div>
 <% end %>
