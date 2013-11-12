@@ -15,7 +15,8 @@
   
     <div class="row-fluid">
     <div class="span12">
-      <h5>All Conditions Updates - <%= link_to "Find a Super", users_path %></h5>
+    
+      <h1>All Conditions Updates - <%= link_to "Find a Super", users_path %></h5>
       <%= render 'shared/feed' %>
     </div>
     </div>
@@ -23,17 +24,23 @@
   </div>  
 <% else %>
   <div class="center hero-unit">
-    <h1>Supers App</h1>
+    <h1>SupersApp.com</h1>
 
     <h2>
-      An application for Golf Course Superintendents
+      An application for Golf Course Superintendents.
     </h2>
-
+    
+  </div>
+<div class="center hero-unit">
+<h1>Hit Green Bar to Sign In</h1>
     <%= link_to "Sign In", signin_path, 
-                                class: "btn btn-large btn-primary btn-success" %>
-                                
-    <%= link_to "Sign up", signup_path, 
-                                class: "btn btn-large btn-primary" %>
+                                class: "btn btn-block btn-primary btn-success" %>
+</div>
+     <div class="center hero-unit">   
+     <h4>Never Given Login Info?  </h3>                        
+    <%= link_to "Create an Account", signup_path, 
+                                class: "btn btn-block btn-primary" %>
+     </div>
   </div>
 
   <%#= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>

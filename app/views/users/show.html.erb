@@ -9,6 +9,14 @@
     <section>
     <%= render 'follow_form' if signed_in? %>
     </section>
+    
+    <div class="row-fluid">
+    <div class="span12">
+    
+      <h1><%= link_to "All Conditions Updates", root_path %> - <%= link_to "Find a Super", users_path %></h5>
+    
+    </div>
+    </div
     <div class="row-fluid">
         <h1><%= link_to @user.name %>  <%=  @user.course %></h1>
       </div>
