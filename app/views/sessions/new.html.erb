@@ -5,13 +5,11 @@
   <div class="span12">
     <%= form_for(:session, url: sessions_path) do |f| %>
 
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+<%= f.text_area :email, placeholder: "Email" %>
+<%= f.text_area :password, placeholder: "Password" %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-
-      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+      
+      <div class="hero-unit"><h1>Hit Green Bar to Login</h1><%= f.submit "", class: "btn btn-block btn-large btn-success" %></div>
     <% end %>
 
     <p>New user? <%= link_to "Sign up now!", signup_path %></p>
