@@ -1,27 +1,32 @@
 <% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
+<h1>Sign Up to SupersApp</h1>
 
-<div class="row">
-  <div class="span6 offset3">
+<div class="row-fluid">
+  <div class="span12">
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
       
-      <%= f.label :name %>
-      <%= f.text_field :name %>
-
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+      <%= f.text_area :name, placeholder: "Name" %>
       
-      <%= f.label :course %>
-      <%= f.text_field :course %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %>
 
-      <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation %>
+      <%= f.text_area :email, placeholder: "Email" %>
 
-      <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+
+      <h3>Select Course You Work At</h3>
+      <%= f.select(:course, [["Biderman"], ["FieldStone"], ["Kennett"], ["Wilmington"]]) %>
+
+
+      <%= f.text_area :password, placeholder: "Password" %>
+
+
+      
+      <%= f.text_area :password_confirmation, placeholder: "Confirmation (type same as above)" %>
+
+      
+        <div class="hero-unit"><h1>Hit Green Bar to Create Account</h1><%= f.submit "", class: "btn btn-block btn-large btn-success" %></div>
+
+      
     <% end %>
   </div>
 </div>
