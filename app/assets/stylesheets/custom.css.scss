@@ -58,6 +58,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+
 }
 
 h2 {
@@ -90,10 +91,12 @@ h5 {
 
 h6 {
   font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
+  letter-spacing: -1px;
+  
+  
+ 
   text-align: center;
-  font: white;
+  font: black;
 }
 
 p {
@@ -238,9 +241,12 @@ input.bigbutton {
 	border-color: #4cae4c;
 	border-radius: 15px;
 	color: white;
+	padding-bottom: 30px;
+	
 	
 		
 }
+
 
 input.bigbutton.h1 {
 	color: white;
