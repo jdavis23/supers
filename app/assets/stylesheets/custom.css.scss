@@ -30,6 +30,8 @@ body {
 
 
 
+
+
 section {
   overflow: auto;
 }
@@ -84,6 +86,14 @@ h5 {
   color: green;
   text-align: center;
   border-top: 10px solid #e8e8e8;
+}
+
+h6 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+  font: white;
 }
 
 p {
@@ -222,6 +232,20 @@ input, textarea, select, .uneditable-input {
   line-height: 1.2em;
   
 }
+
+input.bigbutton {
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+	border-radius: 15px;
+	color: white;
+	
+		
+}
+
+input.bigbutton.h1 {
+	color: white;
+}
+
 
 
 select {
