@@ -3,11 +3,12 @@
     <div class="row-fluid">
     <div class="span12">
     
-      <h1><%= link_to "Go Back to All Conditions Updates", root_path %></h1>
+      <h6><%= link_to "Go Back to All 'Conditions Updates'", root_path %></h1>
     
     </div>
     </div>
 <div class="row">
+<h1># of Supers:  <%= @users.count %></h1>
 <h5>Click Name to View Updates</h5>
 </div>
 <%= will_paginate %>

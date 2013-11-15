@@ -68,7 +68,7 @@ h2 {
   text-align: center;
   font-weight: normal;
   color: green;
-  text-align: left;
+  
 }
 h3 {
   font-size: 2.6em;
@@ -242,6 +242,9 @@ input.bigbutton {
 	border-radius: 15px;
 	color: white;
 	padding-bottom: 35px;
+		padding-right: 35px;
+	padding-left: 35px;
+	border: none;
 	
 	
 		
@@ -250,6 +253,46 @@ input.bigbutton {
 
 input.bigbutton.h1 {
 	color: white;
+}
+
+a.signin {
+
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+  height: 150px;
+  font-size: 3em;
+  padding-top: 15px;
+  line-height: 1.2em;
+  background-color: #5cb85c;
+	border-color: #4cae4c;
+	border-radius: 15px;
+	color: white;
+	padding-bottom: 35px;
+	padding-right: 35px;
+	padding-left: 35px;
+
+	
+}
+
+a.signup {
+
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+  height: 50px;
+  font-size: 2em;
+  padding-top: 15px;
+  line-height: 1.2em;
+  background-color: #5bc0de;
+border-color: #46b8da;
+	border-radius: 15px;
+	color: white;
+	padding-bottom: 35px;
+	padding-right: 35px;
+	padding-left: 35px;
+
+	
 }
 
 

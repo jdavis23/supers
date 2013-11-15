@@ -24,25 +24,29 @@
   </div>  
 <% else %>
   <div class="center hero-unit">
-    <h1>SupersApp.com</h1>
+    <h1>SupersApp</h1>
 
     <h2>
       An application for Golf Course Superintendents.
     </h2>
     
+    
   </div>
-<div class="center hero-unit">
-<h1>Hit Green Bar to Sign In</h1>
+<div class="row-fluid">
+<h1>
     <%= link_to "Sign In", signin_path, 
-                                class: "btn btn-block btn-primary btn-success" %>
+                                class: "signin" %></h1>
                                 
                                 
                                 
 </div>
-     <div class="center hero-unit">   
-     <h4>Never Given Login Info?  </h3>                        
-    <%= link_to "Create an Account", signup_path, 
-                                class: "btn btn-block btn-primary" %>
+
+
+
+     <div class="row-fluid">  
+                            
+   <h1> <%#= link_to "Create an Account", signup_path, 
+                                class: "signup" %></h1>
      </div>
   </div>
 
