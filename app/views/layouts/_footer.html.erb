@@ -3,7 +3,7 @@
 <p><%= link_to "Home", root_path %></p>
 <p><%= link_to "Find a Super", users_path %></p>
   <p><%= link_to "Your Updates", current_user %></p>
-  <p><%= link_to "Change Password", edit_user_path(current_user) %></p>
+  <p><%#= link_to "Change Password", edit_user_path %></p>
   <p><%= link_to "Help",   help_path %></p>
   <%= link_to "Sign out", signout_path, method: "delete" %>
 </footer>
