@@ -90,7 +90,7 @@ h5 {
 }
 
 h6 {
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: -1px;
   
   
@@ -226,6 +226,11 @@ aside {
 
 /* forms */
 
+form {
+  border: 3px solid #bbb;
+  background-color: #bbb;
+}
+
 input, textarea, select, .uneditable-input {
   border: 3px solid #bbb;
   width: 100%;
@@ -238,6 +243,18 @@ input, textarea, select, .uneditable-input {
   
 }
 
+
+textarea.notesarea { 
+  border: 3px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+  height: 300px;
+  font-size: 3em;
+  padding-top: 15px;
+  line-height: 1.2em;
+  }
+
 input.bigbutton {
 	background-color: #5cb85c;
 	border-color: #4cae4c;
@@ -246,10 +263,7 @@ input.bigbutton {
 	padding-bottom: 35px;
 		padding-right: 35px;
 	padding-left: 35px;
-	border: none;
-	
-	
-		
+	border: none;	
 }
 
 
@@ -301,6 +315,7 @@ border-color: #46b8da;
 
 select {
 	height: 75px;
+
 	
 }
 
