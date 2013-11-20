@@ -229,9 +229,13 @@ aside {
 form {
 h1{
 color: white;
+font-size: 3em;
+text-align: right;
 }
 
 padding: 20px;
+padding-right: 22px;
+padding-left: 22px;
   border-radius: 30px;   
   background-color: #076652;
 }
@@ -251,10 +255,11 @@ input, textarea, select, .uneditable-input {
 
 
 textarea.notesarea { 
-  border: 3px solid #bbb;
-  border-radius: 30px;
+  border:none;
+  border-radius: 20px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  
   @include box_sizing;
   height: 400px;
   font-size: 3em;
@@ -265,10 +270,13 @@ textarea.notesarea {
 input.bigbutton {
 	background-color: white;
 	border-color: #4cae4c;
-	border-radius: 10px;
+	border-radius: 30px;
 	color: #076652;
     padding: 10px;
 	border: none;	
+	margin-bottom: -10px;
+	margin-top: -10px;
+	border: 3px solid #bbb;
 }
 
 
@@ -336,6 +344,7 @@ border-color: #46b8da;
 
 select {
 	height: 75px;
+	
 	
 
 	
