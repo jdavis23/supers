@@ -227,9 +227,15 @@ aside {
 /* forms */
 
 form {
-  border: 3px solid #bbb;
-  background-color: #bbb;
+h1{
+color: white;
 }
+
+padding: 20px;
+  border-radius: 30px;   
+  background-color: #076652;
+}
+
 
 input, textarea, select, .uneditable-input {
   border: 3px solid #bbb;
@@ -246,23 +252,22 @@ input, textarea, select, .uneditable-input {
 
 textarea.notesarea { 
   border: 3px solid #bbb;
+  border-radius: 30px;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   @include box_sizing;
-  height: 300px;
+  height: 400px;
   font-size: 3em;
   padding-top: 15px;
   line-height: 1.2em;
   }
 
 input.bigbutton {
-	background-color: #5cb85c;
+	background-color: white;
 	border-color: #4cae4c;
-	border-radius: 15px;
-	color: white;
-	padding-bottom: 35px;
-		padding-right: 35px;
-	padding-left: 35px;
+	border-radius: 10px;
+	color: #076652;
+    padding: 10px;
 	border: none;	
 }
 
@@ -270,6 +275,22 @@ input.bigbutton {
 input.bigbutton.h1 {
 	color: white;
 }
+
+input.bigbuttonfollow {
+	background-color: white;
+	border-color: #4cae4c;
+	border-radius: 10px;
+	color: #076652;
+    padding: 10px;
+	border: none;	
+}
+
+
+input.bigbuttonfollow.h1 {
+	color: white;
+	font-size: 16px;
+}
+
 
 a.signin {
 
@@ -315,6 +336,7 @@ border-color: #46b8da;
 
 select {
 	height: 75px;
+	
 
 	
 }

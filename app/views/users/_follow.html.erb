@@ -1,5 +1,9 @@
 <%= form_for(current_user.relationships.build(followed_id: @user.id),
              remote: true) do |f| %>
   <div><%= f.hidden_field :followed_id %></div>
- <div class="hero-unit"> <h1>Hit Orange Bar to Add These Updates to Your Conditions Feed</h1><%= f.submit "", class: "btn btn-block btn-warning" %></div>
+
+ 
+ <div class="row-fluid"><h1><%= f.submit "Follow", class: "bigbuttonfollow" %></h1></div>
+ 
+ 
 <% end %>
