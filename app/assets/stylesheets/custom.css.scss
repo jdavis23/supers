@@ -230,8 +230,10 @@ form {
 h1{
 color: white;
 font-size: 2.5em;
-text-align: right;
-padding-top: 30px;
+text-align: left;
+margin-bottom: 10px;
+margin-top: 0px;
+letter-spacing: 1px;
 }
 
 padding: 20px;
@@ -346,9 +348,9 @@ border-color: #46b8da;
 
 
 select {
-	height: 116px;
+	height: 70px;
 	color: #076652;
-	font-size: 4em;
+	font-size: 3em;
 	font-weight: bold;
 	background-color: white;
 	margin-bottom: 0px;
