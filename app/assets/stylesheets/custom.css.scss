@@ -49,6 +49,7 @@ textarea {
 
 /* typography */
 
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
@@ -354,12 +355,11 @@ select {
 	font-weight: bold;
 	background-color: white;
 	margin-bottom: 0px;
-	
-	
-	
-	
+	border: none;
+}
 
-	
+select.cartstatus {
+	background-color: white;
 }
 
 
@@ -408,7 +408,7 @@ input {
 
 .microposts {
   list-style: none;
-  margin: 10px 0 0 0;
+  margin: 10px 45px 0 0;
 
   li {
     padding: 10px 0;
@@ -431,4 +431,8 @@ aside {
     height: 100px;
     margin-bottom: 5px;
   }
+}
+
+select#micropost_status {
+	background-color: white;
 }
