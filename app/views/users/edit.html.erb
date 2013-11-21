@@ -6,22 +6,21 @@
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
 
-      <%= f.label :name %>
-      <%= f.text_field :name %>
       
-      <%= f.label :course %>
-      <%= f.text_field :course %>
+      <%= f.text_area :name %>
+      
+ 
+      <%= f.text_area :course %>
 
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+      <%= f.text_area :email %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %>
+      <%= f.text_area :password, placeholder: "New Password" %>
 
-      <%= f.label :password_confirmation, "Confirm Password" %>
-      <%= f.password_field :password_confirmation %>
+      <%= f.text_area :password_confirmation, placeholder: "Confirm New Password" %>
+      
+      <div class="row-fluid"><h6><%= f.submit "Save Changes", class: "bigbutton" %></h6></div>
 
-      <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
+      
       
       
       

@@ -265,7 +265,7 @@ padding-right: 22px;
 padding-left: 22px;
   border-radius: 30px;   
   background-color: #076652;
-  margin-left: 10px;
+  
 }
 
 
@@ -465,14 +465,24 @@ select#micropost_status {
 
 /* Navbar */
 
+
+
 .navbar-inner {
 	
 	padding-top: 25px;
 	padding-bottom: 25px;
 	text-align: center;
+	
 }
 
 .navbar-fixed-bottom {
 
 	
+}
+
+.navbar {
+  .navbar-inner {
+    background-color: #2c2c2c;
+    background-image: none;
+  }
 }
