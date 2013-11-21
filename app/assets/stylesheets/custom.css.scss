@@ -110,10 +110,13 @@ p {
 /* header */
 
 #logo {
+	
+
+
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #076652;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -125,9 +128,28 @@ p {
   }
 }
 
+#footernav {
+	
+
+
+  font-size: 2.7em;
+  color: #076652;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+
 /* footer */
 
 footer {
+
   margin-top: 45px;
   padding-top: 5px;
   padding-left: 15px;
@@ -140,6 +162,7 @@ footer {
       color: gray;
       
     }
+    
   }
   
  
@@ -409,10 +432,11 @@ input {
 
 .microposts {
   list-style: none;
-  margin: 10px 40px 0 0;
+  margin: 15px 15px 15px 0;
+  padding-left: 25px;
 
   li {
-    padding: 10px 0;
+    padding: 10px 0px;
     border-top: 10px solid #e8e8e8;
   }
 }
@@ -436,4 +460,18 @@ aside {
 
 select#micropost_status {
 	background-color: white;
+}
+
+
+/* Navbar */
+
+.navbar-inner {
+	
+	padding-top: 25px;
+	text-align: center;
+}
+
+.navbar-fixed-bottom {
+
+	
 }
