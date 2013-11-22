@@ -88,6 +88,8 @@ h5 {
   color: green;
   text-align: center;
   border-top: 10px solid #e8e8e8;
+  border-bottom: 10px solid #e8e8e8;
+  
 }
 
 h6 {
@@ -153,7 +155,7 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   padding-left: 15px;
-  border-top: 75px solid $grayMediumLight;
+  
   color: black;
   a {
     color: #0088cc; 
