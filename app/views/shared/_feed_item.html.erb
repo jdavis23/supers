@@ -12,7 +12,8 @@
     
     
     <p><span class="content"><%= feed_item.content %></span><p>
-    <p><%= link_to image_tag("golfcart.png", alt: "Golf Cart") %><strong> <%= feed_item.status %></strong></p>
+    <p><%#= link_to image_tag("golfcart.png", alt: "Golf Cart") %><strong> <%= feed_item.status %></strong></p>
+    <p><strong>Delay Lifting at: <%= feed_item.delays %></strong></p>
     <span class="timestamp">
       <p>Posted <%= time_ago_in_words(feed_item.created_at) %> ago.</p>
     </span>

@@ -11,13 +11,19 @@
   <div class="row-fluid">
 
   <div class="span6">
-    <h1>Cart Status: </h1><%= f.select(:status, [["Scatter"], ["Cart Path Only"], ["90 Degrees"], ["Roughs Only"]]) %>
+    <h1>Cart Status: </h1><%= f.select(:status, [[placeholder: "none"], ["Scatter"], ["Cart Path Only"], ["90 Degrees"], ["Roughs Only"]]) %>
   </div>
-    <div class="span6">
+  <div class="span6">
+    <h1>Delay Lifting at: </h1><%= f.select(:delays, [["No Delays"], [" Course Closed for Day"], ["7am"], ["7:15am"], ["7:30am"], ["7:45am"], ["8am"], ["8:15am"], ["8:30am"], ["8:45am"], ["9am"], ["9:15am"], ["9:30am"], ["9:45am"], ["10am"], ["10:15am"], ["10:30am"], ["10:45am"], ["11am"], ["11:15am"], ["11:30am"], ["11:45am"], ["Noon"], ["12:15pm"], ["12:30pm"], ["12:45pm"], ["1pm"], ["1:30pm"], ["2pm"], ["2:30pm"], ["Closed for Day"]]) %>
+  </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span12">
       <div class="pull-right">
   <h6><%= f.submit "Update", class: "bigbutton" %></h6></div>
   </div>
   </div>
+ 
   
 <% end %>
 
